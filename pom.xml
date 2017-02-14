@@ -14,6 +14,7 @@
         <module>xscloud-ribbon</module>
         <module>xscloud-feign</module>
         <module>xscloud-hystrix</module>
+        <module>xscloud-config</module>
     </modules>
 
     <properties>

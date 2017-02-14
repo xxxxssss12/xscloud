@@ -12,9 +12,9 @@ import java.util.Map;
 @RestController
 public class ConsumeController {
     @Autowired
-    private FinanceApi financeApi;
+    private FeignApi feignApi;
     @RequestMapping("/add")
     public Map add() {
-        return financeApi.add(10, 20);
+        return feignApi.add(10, 20);
     }
 }
