@@ -10,9 +10,11 @@
 
     <modules>
         <module>xscloud-registry</module>
-        <module>xscloud-business-finance</module>
+        <module>xscloud-first-service</module>
         <module>xscloud-ribbon</module>
         <module>xscloud-feign</module>
+        <module>xscloud-hystrix</module>
+        <module>xscloud-config</module>
     </modules>
 
     <properties>
@@ -88,7 +90,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.SR4</version>
+                <version>Brixton.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
