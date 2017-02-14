@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -18,7 +19,9 @@ public class HystrixService {
     public Map addService() {
         return restTemplate.getForEntity("http://FIRST-SERVICE/add?a=10&b=20", Map.class).getBody();
     }
-    public String addServiceFallback() {
-        return "error";
+    public Map addServiceFallback() {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("message", "error");
+        return map;
     }
 }
