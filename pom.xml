@@ -15,6 +15,7 @@
         <module>xscloud-feign</module>
         <module>xscloud-hystrix</module>
         <module>xscloud-config</module>
+        <module>xscloud-useconfig</module>
     </modules>
 
     <properties>
