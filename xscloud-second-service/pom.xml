@@ -11,8 +11,9 @@
     </parent>
 
     <groupId>xs.cloud</groupId>
-    <artifactId>xscloud-first-service</artifactId>
+    <artifactId>xscloud-second-service</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,13 +25,4 @@
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.3.RELEASE</version>
-            </plugin>
-        </plugins>
-    </build>
 </project>

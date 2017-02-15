@@ -11,11 +11,13 @@
     <modules>
         <module>xscloud-registry</module>
         <module>xscloud-first-service</module>
+        <module>xscloud-second-service</module>
         <module>xscloud-ribbon</module>
         <module>xscloud-feign</module>
         <module>xscloud-hystrix</module>
         <module>xscloud-config</module>
         <module>xscloud-useconfig</module>
+        <module>xscloud-zuul</module>
     </modules>
 
     <properties>
