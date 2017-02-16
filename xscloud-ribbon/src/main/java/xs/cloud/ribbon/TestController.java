@@ -16,7 +16,7 @@ public class TestController {
     @Autowired
     RestTemplate restTemplate;
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public Map add() {
+        public Map add() {
         return restTemplate.getForEntity("http://FIRST-SERVICE/first/test?a=10&b=20", Map.class).getBody();
     }
 }
