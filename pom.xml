@@ -18,7 +18,7 @@
         <module>xscloud-config</module>
         <module>xscloud-useconfig</module>
         <module>xscloud-zuul</module>
-        <module>xscloud-ribbon-pure</module>
+        <!--<module>xscloud-ribbon-pure</module>-->
     </modules>
 
     <properties>
