@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * Created by xs on 2017/2/14.
  */
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @EnableConfigServer
 @SpringBootApplication
 public class ConfigApplication {

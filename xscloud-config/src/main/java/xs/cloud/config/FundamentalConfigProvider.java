@@ -58,13 +58,18 @@ public class FundamentalConfigProvider {
         } else if (configPath.startsWith(CLASSPATH_PREFIX)) {
             configPath = configPath
                     .substring(CLASSPATH_PREFIX.length());
-            try (
-                    InputStream inputStream = FundamentalConfigProvider.class
-                    .getResourceAsStream(configPath)
-                ) {
+            InputStream inputStream = null;
+
+            try {
                 prop.load(inputStream);
             } catch (Exception e) {
 
+            } finally {
+                if (inputStream != null) try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }else{
             iniWithDir(new File(configPath));
