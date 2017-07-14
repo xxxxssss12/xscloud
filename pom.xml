@@ -18,6 +18,7 @@
         <module>xscloud-config</module>
         <module>xscloud-useconfig</module>
         <module>xscloud-zuul</module>
+        <module>mybatis-config</module>
         <!--<module>xscloud-ribbon-pure</module>-->
     </modules>
 
@@ -109,6 +110,16 @@
                 <groupId>org.eclipse.jgit</groupId>
                 <artifactId>org.eclipse.jgit</artifactId>
                 <version>4.8.0.201706111038-r</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>1.1.0.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.22</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

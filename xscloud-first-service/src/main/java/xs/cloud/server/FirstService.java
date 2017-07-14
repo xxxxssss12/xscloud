@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +23,7 @@ public class FirstService {
     @Autowired
     private DiscoveryClient client;
     @RequestMapping(value = "/test")
-    public Map<String, Object> test(@RequestParam Integer a, @RequestParam Integer b) {
+    public Map<String, Object> test(Integer a, Integer b, HttpServletRequest req) {
         ServiceInstance instance = client.getLocalServiceInstance();
         Integer r = a + b;
         Map<String, Object> map = new HashMap<String, Object>();
