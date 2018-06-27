@@ -12,6 +12,7 @@
         <module>xscloud-registry</module>
         <module>xscloud-first-service</module>
         <module>xscloud-ribbon</module>
+        <module>xs-ribbon</module>
         <module>xscloud-feign</module>
         <module>xscloud-hystrix</module>
         <module>xscloud-config</module>
@@ -19,6 +20,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <ribbon-version>2.2.2</ribbon-version>
+        <eureka-version>1.9.3</eureka-version>
         <spring-boot-dependencies.version>1.4.3.RELEASE</spring-boot-dependencies.version>
         <spring-boot-starter-test.version>1.4.3.RELEASE</spring-boot-starter-test.version>
         <spring-cloud-starter-eureka-server.version>1.1.0.RELEASE</spring-cloud-starter-eureka-server.version>
