@@ -19,6 +19,7 @@
         <module>xscloud-useconfig</module>
         <module>xscloud-zuul</module>
         <module>mybatis-config</module>
+        <module>xscloud-idea-tomcat</module>
         <!--<module>xscloud-ribbon-pure</module>-->
     </modules>
 
