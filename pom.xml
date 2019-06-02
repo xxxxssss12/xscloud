@@ -20,6 +20,7 @@
         <module>xscloud-zuul</module>
         <module>mybatis-config</module>
         <module>xscloud-idea-tomcat</module>
+        <module>xscloud-docker-demo</module>
         <!--<module>xscloud-ribbon-pure</module>-->
     </modules>
 
